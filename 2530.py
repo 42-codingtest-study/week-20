@@ -1,22 +1,22 @@
-H, M, S = map(int, input().split())
-D = int(input()) 
+h, m, s = map(int, input().split())
+d = int(input()) 
 
-S += D % 60
-D = D // 60
-if S >= 60:
-    S -= 60
-    M += 1
+s += d % 60
+d = d // 60
+if s >= 60:
+    s -= 60
+    m += 1
 
-M += D % 60
-D = D // 60
-if M >= 60:
-    M -= 60
-    H += 1
+m += d % 60
+d = d // 60
+if m >= 60:
+    m -= 60
+    h += 1
 
-H += D % 24
-if H >= 24:
-    H -= 24
+h += d % 24
+if h >= 24:
+    h -= 24
 
-print(H,M,S)
+print(h,m,s)
 
     
